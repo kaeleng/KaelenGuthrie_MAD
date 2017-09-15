@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Lab1
+//  lab_1
 //
-//  Created by Kaelen Guthrie on 9/11/17.
+//  Created by Kaelen Guthrie on 9/15/17.
 //  Copyright © 2017 Kaelen Guthrie. All rights reserved.
 //
 

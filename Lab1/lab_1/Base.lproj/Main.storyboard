@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I went to Europe!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wh1-PD-ias">
+                                <rect key="frame" x="95.5" y="35" width="129" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="j6V-uT-hr3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boat" translatesAutoresizingMaskIntoConstraints="NO" id="kC2-1d-cti">
+                                <rect key="frame" x="40" y="151" width="240" height="319"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="9oq-hh-suh"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="320" id="Ck7-XS-z0W"/>
+                                    <constraint firstAttribute="width" secondItem="kC2-1d-cti" secondAttribute="height" multiplier="3:4" id="F22-PQ-UJ3"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="lcy-3w-kTc">
+                                <rect key="frame" x="88.5" y="105" width="143" height="2"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sS-x0-it5">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="2"/>
+                                        <state key="normal" title="Hungary"/>
+                                        <connections>
+                                            <action selector="chooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ub6-y4-kZy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQn-bj-rU5">
+                                        <rect key="frame" x="84" y="0.0" width="59" height="2"/>
+                                        <state key="normal" title="Slovenia"/>
+                                        <connections>
+                                            <action selector="chooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZeV-00-aCL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kC2-1d-cti" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Qf-X9-5Ag"/>
+                            <constraint firstItem="wh1-PD-ias" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="5kE-d8-Lfy"/>
+                            <constraint firstItem="lcy-3w-kTc" firstAttribute="top" secondItem="wh1-PD-ias" secondAttribute="bottom" constant="49.5" id="G1e-Pm-Mg4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="kC2-1d-cti" secondAttribute="bottom" constant="10" id="HZg-8a-Hjh"/>
+                            <constraint firstItem="lcy-3w-kTc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z5g-25-YOf"/>
+                            <constraint firstItem="kC2-1d-cti" firstAttribute="top" secondItem="lcy-3w-kTc" secondAttribute="bottom" constant="44" id="gXo-tX-f3G"/>
+                            <constraint firstItem="wh1-PD-ias" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k6f-PO-NUN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelText" destination="wh1-PD-ias" id="ubB-k2-BrA"/>
+                        <outlet property="picture" destination="kC2-1d-cti" id="twr-FP-VxH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="137.32394366197184"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="boat" width="240" height="320"/>
+    </resources>
+</document>
