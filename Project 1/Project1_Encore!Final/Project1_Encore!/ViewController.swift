@@ -5,6 +5,11 @@
 //  Created by Kaelen Guthrie on 10/14/17.
 //  Copyright © 2017 Kaelen Guthrie. All rights reserved.
 //
+//  Sources:
+//  www.hackingwithswift.com/read/10/6/connecting-up-the-people
+//  https://spin.atomicobject.com/2014/10/25/ios-unwind-segues/
+//  https://stackoverflow.com/questions/33058691/use-uiimagepickercontroller-in-landscape-mode-in-swift-2-0
+//  https://wtop.com/wp-content/uploads/2017/05/ThinkstockPhotos-526833490.jpg
 
 import UIKit
 

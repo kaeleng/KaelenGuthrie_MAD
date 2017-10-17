@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Encore!-->
         <scene sceneID="Ib8-g1-TBU">
             <objects>
                 <collectionViewController id="drI-aS-4RN" customClass="ViewController" customModule="Project1_Encore_" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,7 +59,7 @@
                             <outlet property="delegate" destination="drI-aS-4RN" id="3GA-De-itE"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="nd3-c7-6ts">
+                    <navigationItem key="navigationItem" title="Encore!" id="nd3-c7-6ts">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="pVM-ir-4pu">
                             <connections>
                                 <segue destination="wOF-CQ-OSd" kind="presentation" id="Qv1-LG-448"/>
